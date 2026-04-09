@@ -78,3 +78,10 @@ Parse last 5 entries: `grep "^## \[" log.md | tail -5`
 ## [2026-04-07] ingest | Video Understanding | InternVideo2.5: Empowering Video MLLMs with Long and Rich Context Modeling
 ## [2026-04-07] ingest | Video Understanding | VideoChat: Chat-Centric Video Understanding
 ## [2026-04-07] ingest | Video Understanding | SlowFast Networks for Video Recognition
+## [2026-04-09] ingest | Video Understanding | MovieQA: Understanding Stories in Movies through Question-Answering
+## [2026-04-09] ingest | 3D Scene Understanding | Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D
+## [2026-04-09] setup | — | Created video-reasoning topic
+## [2026-04-09] ingest | Video Reasoning | VBVR: A Very Big Video Reasoning Suite
+## [2026-04-09] ingest | Video Reasoning | Intuitive physics understanding emerges from self-supervised pretraining on natural videos
+## [2026-04-09] reorganize | — | Merged world-models topic into video-reasoning; both approaches are complementary aspects of video reasoning
+## [2026-04-09] reorganize | — | Merged video-reasoning back into world-models; repositioned as comprehensive world models research covering physics emergence + reasoning benchmarks

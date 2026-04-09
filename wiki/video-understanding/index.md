@@ -8,17 +8,6 @@ Research on training models to understand, reason about, and answer questions ov
 
 ## Papers by year
 
-### 2019
-- [[papers/2019-slowfast-networks|SlowFast Networks for Video Recognition]] — ICCV; dual-pathway architecture separating spatial (Slow, low frame rate) and temporal (Fast, high frame rate) processing; biologically inspired (P-cells vs. M-cells); lightweight Fast pathway (~20% computation); SOTA on Kinetics, Charades, AVA
-<img src="../../raw/video-understanding/2019/thumbnails/2019-slowfast-networks.png" height="300"/>
-
-### 2024
-- [[papers/2024-videochat|VideoChat: Chat-Centric Video Understanding]] — arXiv; first chat-centric video-LLM unifying video understanding as multi-round QA; VideoChat-Text (textual descriptions) + VideoChat-Embed (direct embeddings); video-centric instruction dataset with ChatGPT-generated conversations; excels at spatiotemporal reasoning and causal inference
-<img src="../../raw/video-understanding/2024/thumbnails/2024-videochat.png" height="300"/>
-
-- [[papers/2024-vrag-retrieval-augmented-video-qa|VRAG: Retrieval-Augmented Video Question Answering for Long-Form Videos]] — CVPR Workshop; retrieval-first RAG approach for long-form VideoQA using multimodal search (semantic, audio, OCR, objects) + temporal re-ranking; 40.5/45 on KIS, 4/5 on VQA queries (VBS benchmark)
-<img src="../../raw/video-understanding/2024/thumbnails/2024-vrag-retrieval-augmented-video-qa.png" height="300"/>
-
 ### 2026
 - [[papers/2026-video-understanding-large-language-models-survey|Video Understanding With Large Language Models: A Survey]] — IEEE TCSVT; comprehensive taxonomy of 3 architectures (Analyzer×LLM, Embedder×LLM, hybrid) and 5 LLM functional roles (Summarizer, Manager, Text Decoder, Regressor, Hidden Layer); covers 100+ Vid-LLMs, benchmarks, evaluation methods, and applications
 <img src="../../raw/video-understanding/2026/thumbnails/2026-video-understanding-large-language-models-survey.png" height="300"/>
@@ -47,6 +36,21 @@ Research on training models to understand, reason about, and answer questions ov
 
 - [[papers/2025-internvideo2.5|InternVideo2.5: Empowering Video MLLMs with Long and Rich Context Modeling]] — arXiv; hierarchical token compression (HiCo) + task preference optimization (TPO) enables 6x longer video memory with fine-grained understanding; SOTA on MVBench/VideoMME; emergent object tracking and segmentation capabilities
 <img src="../../raw/video-understanding/2025/thumbnails/2025-internvideo2.5.png" height="300"/>
+
+### 2024
+- [[papers/2024-videochat|VideoChat: Chat-Centric Video Understanding]] — arXiv; first chat-centric video-LLM unifying video understanding as multi-round QA; VideoChat-Text (textual descriptions) + VideoChat-Embed (direct embeddings); video-centric instruction dataset with ChatGPT-generated conversations; excels at spatiotemporal reasoning and causal inference
+<img src="../../raw/video-understanding/2024/thumbnails/2024-videochat.png" height="300"/>
+
+- [[papers/2024-vrag-retrieval-augmented-video-qa|VRAG: Retrieval-Augmented Video Question Answering for Long-Form Videos]] — CVPR Workshop; retrieval-first RAG approach for long-form VideoQA using multimodal search (semantic, audio, OCR, objects) + temporal re-ranking; 40.5/45 on KIS, 4/5 on VQA queries (VBS benchmark)
+<img src="../../raw/video-understanding/2024/thumbnails/2024-vrag-retrieval-augmented-video-qa.png" height="300"/>
+
+### 2019
+- [[papers/2019-slowfast-networks|SlowFast Networks for Video Recognition]] — ICCV; dual-pathway architecture separating spatial (Slow, low frame rate) and temporal (Fast, high frame rate) processing; biologically inspired (P-cells vs. M-cells); lightweight Fast pathway (~20% computation); SOTA on Kinetics, Charades, AVA
+<img src="../../raw/video-understanding/2019/thumbnails/2019-slowfast-networks.png" height="300"/>
+
+### 2016
+- [[papers/2016-movieqa|MovieQA: Understanding Stories in Movies through Question-Answering]] — large-scale multimodal QA dataset with 14,944 questions across 408 movies; integrates plots, subtitles, video clips, scripts, and DVS transcriptions; questions span factual to reasoning-intensive ("Why", "How"); temporal annotations on 140 movies
+<img src="../../raw/video-understanding/2016/thumbnails/2016-movieqa.png" height="300"/>
 
 ## Concepts
 

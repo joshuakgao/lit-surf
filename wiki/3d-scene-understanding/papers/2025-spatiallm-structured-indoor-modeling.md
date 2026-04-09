@@ -36,9 +36,6 @@ The key insight is that LLMs' strong language generation priors can be adapted f
 
 ## Architecture
 
-![[raw/3d-scene-understanding/2025/assets/spatiallm-fig1-pipeline.png]]
-*Figure 1: Encoder-MLP-LLM pipeline — point cloud → multimodal feature alignment → structured text output*
-
 **Point Cloud Encoder:** 3DCNN operating on voxelised point clouds at 2.5cm spatial resolution (K=2). DINOv2 features are associated with each 3D point (lifted from multi-view RGBD images) and aggregated per voxel. Ablations show that adding DINOv2 features to the raw XYZ+RGB encoder significantly improves F1 scores — particularly for object detection (45.0 → 49.4 at IoU@0.5).
 
 **MLP Projector:** Maps point cloud features into the LLM's token embedding space. Trained in the alignment stage with the LLM frozen.
@@ -46,7 +43,6 @@ The key insight is that LLMs' strong language generation priors can be adapted f
 **LLM:** Qwen2.5-0.5B, fine-tuned end-to-end. The auto-regressive generation of structured tokens naturally handles variable scene complexity.
 
 **Structured Representation:**
-![[raw/3d-scene-understanding/2025/assets/spatiallm-fig2-structured-representation.png]]
 *Figure 2: Text format for layout (walls/doors/windows as plane segments) and objects (6-DoF bounding boxes)*
 
 Layout elements encoded as: `@data:class wall, position_x, position_y, position_z, width, height`

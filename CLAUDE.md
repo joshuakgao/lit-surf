@@ -160,6 +160,7 @@ Notable variations developed in subsequent work.
 IMPORTANT:
 - Make sure there is no whitespace before the `<img />` or else the image won't render
 - Do NOT include `width` property on images — only use `height="300"` to preserve original aspect ratio
+- The Years should be in descending order where the latest papers are at the top of the index and the oldest are at the bottom
 ### Topic overview (`wiki/{topic}/overview.md`)
 
 ```markdown
