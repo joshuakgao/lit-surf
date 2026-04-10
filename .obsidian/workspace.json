@@ -30,9 +30,65 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "80c1f0974cd8902a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "827127347107c5f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "reading-list/DepthAnything.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DepthAnything"
+            }
+          },
+          {
+            "id": "2e92c54c96e97999",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "reading-list/DepthAnything V2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DepthAnything V2"
+            }
+          },
+          {
+            "id": "d447cbc1304e33cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "reading-list/V-JEPA 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "V-JEPA 2"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -194,9 +250,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "554a49932ac184c9",
+  "active": "d447cbc1304e33cb",
   "lastOpenFiles": [
+    "reading-list/DepthAnything V2.md",
+    "reading-list/V-JEPA 2.md",
+    "reading-list/DepthAnything.md",
     "README.md",
+    "reading-list/JEPA.md",
     "wiki/agentic-mllms/papers/2023-viper-gpt.md",
     "wiki/agentic-mllms/papers/2022-visual-programming-compositional-visual-reasoning.md",
     "wiki/agentic-mllms/overview.md",
@@ -220,13 +280,9 @@
     "wiki/world-models/papers/2026-vbvr-very-big-video-reasoning.md",
     "wiki/video-reasoning/index.md",
     "wiki/world-models/concepts/video-as-reasoning-substrate.md",
-    "wiki/world-models/concepts/verifiable-evaluation.md",
-    "wiki/world-models/concepts/cognitive-architecture.md",
     "raw/world-models/2026/thumbnails",
     "raw/world-models/2026/2026-vbvr-very-big-video-reasoning.pdf",
     "raw/world-models/2026",
-    "wiki/video-reasoning/concepts/violation-of-expectation.md",
-    "wiki/video-reasoning/concepts/predictive-coding.md",
     "raw/video-reasoning/2025/thumbnails/2025-intuitive-physics-self-supervised-pretraining.png",
     "raw/video-reasoning/2025/thumbnails",
     "raw/video-reasoning/2025/2025-intuitive-physics-self-supervised-pretraining.pdf",
