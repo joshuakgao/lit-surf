@@ -4,7 +4,7 @@ authors: Thawakar, Omkar; et al.
 year: 2025
 venue: ACL
 topic: vision-language-models
-source: "[[raw/vision-language-models/2025/2025-llamav-o1-visual-reasoning.pdf]]"
+source: "[[raw/vision-language-models/2025/2025-llamav-o1-step-by-step-reasoning.pdf]]"
 tags: [visual-reasoning, multi-step-reasoning, curriculum-learning, reasoning-benchmark]
 ---
 

@@ -15,7 +15,7 @@
 | [[wiki/sports-analytics/index\|Sports Analytics]] | 3 | 2026-04-06 |
 | [[wiki/synthetic-datasets/index\|Synthetic Datasets]] | 2 | 2026-04-07 |
 | [[wiki/video-understanding/index\|Video Understanding]] | 13 | 2026-04-09 |
-| [[wiki/vision-language-models/index\|Vision-Language Models]] | 24 | 2026-04-07 |
+| [[wiki/vision-language-models/index\|Vision-Language Models]] | 23 | 2026-04-09 |
 | [[wiki/visual-localization/index\|Visual Localization]] | 2 | 2026-04-07 |
 | [[wiki/world-models/index\|World Models]] | 2 | 2026-04-09 |
 

@@ -9,12 +9,13 @@ Research on models that jointly understand and generate language grounded in vis
 ## Papers by year
 
 ### 2025
-- [[papers/2025-spatiallm-llm-structured-indoor-modeling|SpatialLM: Training Large Language Models for Structured Indoor Modeling]] — LLM for 3D indoor scene understanding and structural reconstruction from scene descriptions
-- [[papers/2025-describe-anything-detailed-localized-captioning|Describe Anything: Detailed Localized Image and Video Captioning]] — focal prompt + localized vision backbone for SOTA detailed region captioning in images and videos; introduces DLC-SDP and DLC-Bench
+- [[papers/2025-describe-anything-localized-captioning|Describe Anything: Detailed Localized Image and Video Captioning]] — focal prompt + localized vision backbone for SOTA detailed region captioning in images and videos; introduces DLC-SDP and DLC-Bench
 - [[papers/2025-skip-newline-reduce-hallucination|SKIP \\N: A Simple Method to Reduce Hallucination in Large Vision-Language Models]] — prompt engineering approach reducing hallucinations by minimizing newline sequences in LLM responses
 - [[papers/2025-latent-space-steering-reduce-hallucinations|Reducing Hallucinations in Vision-Language Models via Latent Space Steering]] — visual and textual intervention (VTI) via precomputed feature steering vectors to reduce hallucinations
-- [[papers/2025-llamav-o1-step-by-step-visual-reasoning|LlamaV-o1: Rethinking Step-by-step Visual Reasoning in LLMs]] — VLM with explicit step-by-step reasoning for complex visual understanding tasks
+- [[papers/2025-llamav-o1-step-by-step-reasoning|LlamaV-o1: Rethinking Step-by-step Visual Reasoning in LLMs]] — VLM with explicit step-by-step reasoning for complex visual understanding tasks
 - [[papers/2025-internvl-large-vision-language-model|InternVL: A Scalable Vision-Language Model]] — large-scale VLM with strong performance across diverse vision-language benchmarks
+- [[papers/2025-mmlongbench|MMLongBench: Benchmarking Long-Context Vision-Language Models Effectively and Thoroughly]] — comprehensive benchmark for evaluating long-context VLMs across 7 dimensions and 12 tasks; exposes significant gaps in handling extended visual-textual inputs
+- [[papers/2025-spatiallm-llm-structured-indoor-modeling|SpatialLM]] — *(duplicate; see [[../../3d-scene-understanding/papers/2025-spatiallm-structured-indoor-modeling|full entry in 3D Scene Understanding]])*
 
 ### 2024
 - [[papers/2024-intro-vision-language-modeling|An Introduction to Vision-Language Modeling]] — comprehensive introduction to VLM architectures, training paradigms, and applications
