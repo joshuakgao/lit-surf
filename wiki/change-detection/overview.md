@@ -4,11 +4,11 @@ topic: change-detection
 
 # Change Detection — Overview
 
-*Last updated: 2026-04-07 | Sources: 3 papers*
+*Last updated: 2026-04-12 | Sources: 4 papers*
 
 ## Current thesis
 
-Change detection is advancing along two converging paths. **Path 1: Foundation model adaptation** (GeSCF, DynamicEarth) leverages off-the-shelf models (SAM, CLIP) to achieve zero-shot generalization by decomposing the task into reusable components (segmentation → comparison → semantic grounding). **Path 2: Generative pre-training** (Changen2) synthesizes large-scale change data from single-temporal images via stochastic change modeling, enabling new foundation models specifically tailored for change detection with inherent zero-shot capability. These paths converge on the observation that labeled change data is expensive and scarce; they diverge on whether to adapt existing general-purpose models or create change-specific models via synthetic pre-training. Changen2 establishes that temporal diversity in synthetic data is critical for transferability, opening a new frontier in synthetic data pre-training for earth observation.
+Change detection is advancing along three complementary paths. **Path 1: Foundation model adaptation** (GeSCF, DynamicEarth) leverages off-the-shelf models (SAM, CLIP) for zero-shot generalization via task decomposition (segmentation → comparison → semantic grounding), optimized for satellite/natural imagery. **Path 2: Generative pre-training** (Changen2) synthesizes large-scale change data via stochastic modeling for remote sensing foundation models with inherent zero-shot capability. **Path 3: 3D geometric alignment** (SceneDiff) aligns multiview sequences in 3D space to eliminate viewpoint confounds, enabling instance-level change detection and tracking; training-free pipeline benefits naturally from model improvements. These paths share the insight that labeled change data is scarce, but propose different solutions: adapt general models (Path 1), create domain-specific models (Path 2), or exploit geometric alignment (Path 3). SceneDiff extends the field beyond satellite/2D imagery to robotics and construction monitoring, highlighting that the task's applicability spans domains from earth observation to indoor scene understanding.
 
 ## Key trends
 
@@ -23,6 +23,12 @@ Change detection is advancing along two converging paths. **Path 1: Foundation m
 - **Open-vocabulary change detection unlocks new applications.** DynamicEarth combines SAM, SAM2, CLIP, and Grounding DINO to answer "4W" queries (when, where, what object, what change) in earth observation. Enables users to describe changes in natural language rather than selecting predefined categories.
 - **Foundation model composition for complex reasoning.** Demonstrates that orchestrating complementary foundation models (segmentation → change comparison → semantic grounding) outperforms single-model approaches. Foreshadows future where change detection (and anomaly detection broadly) is assembly of foundation models rather than end-to-end training.
 - **Domain diversity.** DynamicEarth focuses on satellite/earth observation imagery; GeSCF on natural scenes. Together, they span the application space from remote sensing to everyday photography, establishing change detection as a cross-domain problem requiring general solutions.
+
+**2026:**
+- **3D geometry as primitive for multiview change detection.** SceneDiff introduces 3D scene alignment as a core mechanism: static scene geometry from before/after sequences enables co-registration into shared 3D space, eliminating viewpoint confounds. Contrasts with pixel/semantic-only approaches; shifts the field toward considering geometric consistency as equal to appearance consistency.
+- **Instance-level change tracking in real-world scenes.** SceneDiff focuses on concrete robotics/monitoring applications (room tidying, construction, disaster assessment) vs. earth observation focus of prior work (2024-2025). Introduces first instance-level multiview change detection benchmark with 350 video pairs and dense annotations; establishes new evaluation protocol for per-view and per-scene change assessment.
+- **Training-free pipelines scale with model improvements.** SceneDiff demonstrates benefit of non-trainable composition: combines π³ (3D), SAM (segmentation), DINO (semantics) without any fine-tuning. Naturally improves as underlying pretrained models improve; removes need for task-specific training data or retraining. Validates hypothesis that foundation models enable training-free systems for structured geometric tasks.
+- **Benchmarking shifts from satellite to general scenes.** GeSCF/Changen2 focused on remote sensing; SceneDiff covers 20 diverse indoor/outdoor categories. Indicates field broadening beyond satellite domain toward general vision; suggests that change detection principles may generalize across modalities (video, RGBD, etc.).
 
 ## Open problems
 
@@ -43,5 +49,6 @@ Change detection is advancing along two converging paths. **Path 1: Foundation m
 ## Recommended reading order
 
 1. [[papers/2024-towards-generalizable-scene-change-detection|GeSCF (2024)]] — the foundation model adaptation paradigm; establishes that domain generalization, not accuracy, is the bottleneck; introduces GeSCD benchmark and ChangeVPR dataset for cross-domain evaluation; foundation for understanding zero-shot change detection
-2. [[papers/2024-changen2|Changen2 (2024)]] — the generative pre-training paradigm; alternative to foundation model adaptation; demonstrates that synthetic change data pre-training achieves comparable zero-shot performance; introduces generative probabilistic change models and resolution-scalable diffusion transformers; shows self-supervised learning at scale for remote sensing
-3. [[papers/2025-dynamicearth-open-vocabulary-change-detection|DynamicEarth (2025)]] — semantic extension of zero-shot approaches; combines multiple foundation models for open-vocabulary change understanding; demonstrates that both pre-training and composition strategies can be enhanced by semantic reasoning
+2. [[papers/2024-changen2|Changen2 (2024)]] — the generative pre-training paradigm; alternative to foundation model adaptation; demonstrates that synthetic change data pre-training achieves comparable zero-shot performance; introduces generative probabilistic change models; shows self-supervised learning at scale for remote sensing
+3. [[papers/2026-scenediff-multiview-object-change-detection|SceneDiff (2026)]] — the geometric alignment paradigm; shifts focus from satellite/2D imagery to multiview real-world scenes and robotics; introduces 3D geometry as a first-class primitive for change localization; demonstrates training-free pipeline benefits from model improvements; provides first instance-level multiview benchmark with dense annotations
+4. [[papers/2025-dynamicearth-open-vocabulary-change-detection|DynamicEarth (2025)]] — semantic extension of foundation model composition; combines segmentation, comparison, and semantic grounding for open-vocabulary change queries; shows that multiple approaches (pre-training, composition, geometry) can be complementary

@@ -4,7 +4,7 @@ authors: Xiao, Bin; Wu, Haiping; Xu, Weijian; Dai, Xiyang; Hu, Houdong; Lu, Yuma
 year: 2024
 venue: CVPR
 topic: vision-language-models
-source: "[[raw/vision-language-models/2024/2024-florence-2-unified-representation.pdf]]"
+source: "[[raw/vision-language-models/2024/2024-florence2-unified-vision-tasks.pdf]]"
 tags: [unified-representation, prompt-based-tasks, dense-annotations, vision-foundation-model]
 ---
 

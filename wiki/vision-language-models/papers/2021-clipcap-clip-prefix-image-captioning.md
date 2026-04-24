@@ -4,7 +4,7 @@ authors: Mokady, Ron; Hertz, Amir; Bermano, Amit H.
 year: 2021
 venue: arXiv
 topic: vision-language-models
-source: "[[raw/vision-language-models/2021/2021-clip-prefix-image-captioning.pdf]]"
+source: "[[raw/vision-language-models/2021/2021-clipcap-clip-prefix-image-captioning.pdf]]"
 tags: [image-captioning, clip, prefix-tuning, parameter-efficient]
 ---
 

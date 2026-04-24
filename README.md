@@ -5,9 +5,23 @@
 I have created a custom CLAUDE.md that may be useful to you as it supports thumbnail photos for each paper, and identifies trends over time for a research topic.
 
 ## Usage
+```bash
+cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Lit\ Surf/
+claude --dangerously-skip-permissions
+```
+
+**Download a paper:**
+
+Either manually add a pdf to "reading-list" or
+```bash
+cd reading-list
+wget -O title.pdf https://arxiv.org/pdf/2412.07612
+```
+
+**Then in Claude Code:**
 
 ```claude
-ingest bridge-eqa.pdf # add bridge-eqa.pdf to reading-list
+ingest bridge-eqa.pdf, thumbnail: [Image 1], topic: embodied-ai
 ingest https://arxiv.org/pdf/2412.07612
 
 lint # to clean up, reorganize, and avoid contradictions in wiki's

@@ -4,7 +4,7 @@ authors: Zhang, Jingyi; Huang, Jiaxing; Jin, Sheng; Lu, Shijian
 year: 2023
 venue: IEEE TPAMI
 topic: vision-language-models
-source: "[[raw/vision-language-models/2023/2023-vlm-vision-tasks-survey.pdf]]"
+source: "[[raw/vision-language-models/2023/2023-vision-language-models-vision-tasks-survey.pdf]]"
 tags: [survey, transfer-learning, knowledge-distillation, benchmarking, zero-shot]
 ---
 

@@ -5,11 +5,11 @@ year: 2025
 venue: arXiv
 topic: agentic-mllms
 source: "[[raw/agentic-mllms/2025/2025-vipact-visual-perception-agent.pdf]]"
-thumbnail: "[[wiki/agentic-mllms/papers/2025-vipact-visual-perception-agent.png]]"
+thumbnail: "[[raw/agentic-mllms/2025/thumbnails/2025-vipact-visual-perception-agent.png]]"
 tags: [vlm-agents, multi-agent-collaboration, visual-perception, tool-use, fine-grained-understanding]
 ---
 
-![](/wiki/agentic-mllms/papers/2025-vipact-visual-perception-agent.png)
+![](/raw/agentic-mllms/2025/thumbnails/2025-vipact-visual-perception-agent.png)
 
 ## Summary
 

@@ -4,11 +4,11 @@ topic: world-models
 
 # World Models — Overview
 
-*Last updated: 2026-04-09 | Sources: 2 papers*
+*Last updated: 2026-04-16 | Sources: 3 papers*
 
 ## Current thesis
 
-World models emerge from video through two complementary mechanisms: **self-supervised learning of physics** and **systematic evaluation of reasoning**. V-JEPA (2025) demonstrates that intuitive physics understanding emerges spontaneously from masked video prediction in representation space—no explicit labels needed. VBVR (2026) provides the first large-scale benchmark to measure what world reasoning capabilities exist and how they scale. Together, these papers suggest: (1) representation-space prediction is a sufficient inductive bias to acquire physics understanding, and (2) systematic evaluation of diverse reasoning tasks reveals emergent generalization to unseen task types. World models are learnable and measurable at scale.
+World models are learnable and measurable at scale through self-supervised prediction, and moreover, can be acquired from minimal naturalistic data with developmental plausibility. V-JEPA (2025) shows that intuitive physics emerges from representation-space prediction without explicit supervision. VBVR (2026) benchmarks world reasoning at scale across five cognitive capabilities. BabyZWM (2026) demonstrates that data-efficient zero-shot visual-cognitive abilities emerge from just 868 hours of egocentric child video (3 months of waking experience) using sparse temporally-factored prediction and approximate causal inference. Together, these papers establish: (1) representation-space prediction is a sufficient inductive bias for physics understanding, (2) diverse reasoning capabilities generalize systematically when benchmarked at scale, and (3) architectural choices (factorization, causal inference) enable learning from human-scale data while matching developmental trajectories and neural alignment with infant brains.
 
 ## Key trends
 
@@ -25,6 +25,9 @@ World models emerge from video through two complementary mechanisms: **self-supe
 - **Verifiable evaluation paradigm**: VBVR-Bench uses rule-based, human-aligned scorers instead of VLM judges. Enables reproducible, interpretable diagnosis of specific reasoning bottlenecks.
 - **Emergent generalization in world reasoning**: VBVR's scaling study reveals that models improve on unseen task types with more training data—suggesting world reasoning capabilities generalize systematically, not just memorize.
 - **Integration of physics and task reasoning**: V-JEPA's emergent physics and VBVR's task-based benchmarks represent complementary approaches to understanding world models—mechanism vs. measurement.
+- **Data-efficient learning from naturalistic child video**: BabyZWM learns diverse visual-cognitive abilities (depth, motion, segmentation, intuitive physics) from just 868 hours of egocentric video. Challenges assumption that world models require massive datasets; opens path toward human-scale data efficiency.
+- **Zero-shot extraction via approximate causal inference**: BabyZWM introduces a general interface for extracting task-specific predictions from a single trained predictor by comparing counterfactual inputs. Shifts from task-specific readout training to universal zero-shot prompting.
+- **Developmental alignment and neural plausibility**: BabyZWM exhibits learning trajectories paralleling human infant development and internal representations correlating with fMRI responses. Provides evidence that architectural choices (sparse temporal factorization) capture cognitively and biologically plausible learning principles.
 
 ## Open problems
 
@@ -44,9 +47,18 @@ World models emerge from video through two complementary mechanisms: **self-supe
 - **Task distribution bias**: Despite community contribution, coverage may be uneven; some capabilities may have fewer exemplars
 - **Extrapolation beyond 2M**: Do scaling trends continue to 10B+ samples? Classical scaling law assumptions may not hold
 
+**Data efficiency and scaling (BabyZWM):**
+- **Scaling to larger datasets**: BabyZWM trains on 868 hours (single child); how does performance scale with multi-child data or larger datasets? Is there a plateau or continued improvement?
+- **Generalization beyond child video**: BabyZWM trained on egocentric child video; robustness to other egocentric domains (robotics, adult POV, synthetic) unexplored
+- **Complex real-world physics**: Evaluation focuses on simple object dynamics; soft bodies, friction, fluids, complex interactions not tested
+- **True causal reasoning**: Approximate causal inference compares predictions; whether model supports true counterfactual interventions ("what if I push that?") is unclear
+- **Scaling to richer semantics**: Model learns appearance/dynamics factorization; integration with semantic understanding (object categories, agent intentions) is open
+
 **Integration:**
 - **Physics ↔ Task reasoning**: Can V-JEPA's physics improve VBVR task performance? Do task-trained models develop emergent physics?
 - **Joint evaluation**: No existing benchmark that simultaneously measures physics understanding and task reasoning
+- **BabyZWM ↔ VBVR**: Does BabyZWM's data-efficient learning scale to VBVR's 200 tasks? Can zero-shot extraction rival VBVR's rule-based evaluation?
+- **Data-efficient architectures for benchmarking**: Can BabyZWM's architectural principles (sparse factorization, causal inference) improve sample efficiency on VBVR?
 
 ## Contradictions and debates
 
@@ -55,5 +67,6 @@ World models emerge from video through two complementary mechanisms: **self-supe
 ## Recommended reading order
 
 1. [[papers/2025-intuitive-physics-self-supervised-pretraining|V-JEPA Intuitive Physics (2025)]] — establishes that representation-space prediction learns physics without explicit supervision; entry point for understanding emergent world models from self-supervised learning
-2. [[papers/2026-vbvr-very-big-video-reasoning|VBVR (2026)]] — provides large-scale benchmarks to measure world reasoning capabilities and their scaling behavior; read after V-JEPA to understand how physics and reasoning emerge systematically
-   - **Alternative entry**: If interested in benchmarking and evaluation rather than learning mechanisms, start here
+2. [[papers/2026-babyzwm-zero-shot-world-models|BabyZWM (2026)]] — demonstrates data-efficient learning and zero-shot transfer from naturalistic child video; shows how architectural choices enable both developmental plausibility and flexible inference; bridges self-supervised learning with cognitive science
+3. [[papers/2026-vbvr-very-big-video-reasoning|VBVR (2026)]] — provides large-scale benchmarks to measure world reasoning capabilities and their scaling behavior; read last to see how diverse reasoning tasks measure progress from foundational physics to complex reasoning
+   - **Alternative entry (evaluation-focused)**: Start with VBVR if interested in benchmarking rather than learning mechanisms

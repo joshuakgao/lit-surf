@@ -8,6 +8,10 @@ Research on detecting and localizing temporal changes between image pairs or seq
 
 ## Papers by year
 
+### 2026
+- [[papers/2026-scenediff-multiview-object-change-detection|SceneDiff: A Benchmark and Method for Multiview Object Change Detection]] — instance-level change detection in multiview scenes; aligns before/after video sequences using 3D geometry of static elements; training-free pipeline combines π³, SAM, DINO for added/removed/moved object classification; 350-pair benchmark with dense annotations
+<img src="../../raw/change-detection/2026/thumbnails/2026-scenediff-multiview-object-change-detection.png" height="300"/>
+
 ### 2025
 - [[papers/2025-dynamicearth-open-vocabulary-change-detection|DynamicEarth: How Far are We from Open-Vocabulary Change Detection?]] — addresses "4W" queries in earth observation; combines SAM, SAM2, CLIP for open-vocabulary change detection; Mask-Compare-Identify framework leverages foundation models for semantic change understanding
 <img src="../../raw/change-detection/2025/thumbnails/2025-dynamicearth-open-vocabulary-change-detection.png" height="300"/>

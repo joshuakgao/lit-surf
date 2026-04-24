@@ -4,7 +4,7 @@ authors: Liu, Sheng; Ye, Haotian; Xing, Lei; Zou, James
 year: 2024
 venue: EMNLP
 topic: vision-language-models
-source: "[[raw/vision-language-models/2025/2024-vti-latent-space-steering.pdf]]"
+source: "[[raw/vision-language-models/2025/2025-latent-space-steering-reduce-hallucinations.pdf]]"
 tags: [hallucination-mitigation, latent-space-intervention, test-time-inference, vision-encoder-stability]
 ---
 

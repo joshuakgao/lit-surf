@@ -4,7 +4,7 @@ authors: Liu, Haotian; Li, Chunyuan; Wu, Yuheng; Helwegen, Kees
 year: 2023
 venue: NeurIPS
 topic: vision-language-models
-source: "[[raw/vision-language-models/2023/2023-llava-improved-baselines.pdf]]"
+source: "[[raw/vision-language-models/2023/2023-improved-llava-visual-instruction-tuning.pdf]]"
 tags: [instruction-tuning, visual-qa, vision-language-understanding, high-resolution]
 ---
 

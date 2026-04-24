@@ -85,3 +85,36 @@ Parse last 5 entries: `grep "^## \[" log.md | tail -5`
 ## [2026-04-09] ingest | Video Reasoning | Intuitive physics understanding emerges from self-supervised pretraining on natural videos
 ## [2026-04-09] reorganize | — | Merged world-models topic into video-reasoning; both approaches are complementary aspects of video reasoning
 ## [2026-04-09] reorganize | — | Merged video-reasoning back into world-models; repositioned as comprehensive world models research covering physics emergence + reasoning benchmarks
+## [2026-04-10] ingest | Depth Estimation | Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data (Yang et al., arXiv 2024)
+## [2026-04-10] lint | — | Fixed 14 broken wiki-links in index.md (removed backslash from pipe separators); moved 12 thumbnails from wiki/*/papers/ to raw/*/year/thumbnails/; updated 12 paper summaries with correct thumbnail paths; fixed image references in 6 topic index.md files (visual-localization, synthetic-datasets, denoising-segmentations, agentic-mllms); removed broken image tags from construction-monitoring index (no thumbnails available)
+## [2026-04-10] ingest | Depth Estimation | Depth Anything V2: Reliable Monocular Depth Estimation in the Wild (Yang et al., arXiv 2024)
+## [2026-04-10] ingest | Vision Backbone | Emerging Properties in Self-Supervised Vision Transformers (Caron et al., arXiv 2021)
+## [2026-04-12] ingest | 3D Scene Understanding | Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D (DeTone et al., arXiv 2026)
+## [2026-04-12] ingest | Change Detection | SceneDiff: A Benchmark and Method for Multiview Object Change Detection (Wu et al., arXiv 2026)
+## [2026-04-12] ingest | Visual Geometry Reconstruction | π³: Permutation-Equivariant Visual Geometry Learning (Wang et al., ICLR 2026)
+## [2026-04-12] reorganize | — | Renamed visual-geometry-reconstruction topic to 3d-scene-reconstruction; aligns with broader scope encompassing 3D reconstruction approaches
+## [2026-04-12] ingest | Point Cloud Registration | GeoTransformer: Fast and Robust Point Cloud Registration with Geometric Transformer
+## [2026-04-12] ingest | Point Cloud Registration | Deep Closest Point: Learning Representations for Point Cloud Registration
+## [2026-04-12] ingest | Dynamic Scene Graph Generation | Spatial-Temporal Transformer for Dynamic Scene Graph Generation (Cong et al., arXiv 2021)
+## [2026-04-12] ingest | Dynamic Scene Graph Generation | OED: Towards One-stage End-to-End Dynamic Scene Graph Generation (Wang et al., arXiv 2024)
+## [2026-04-12] ingest | Quantization | TurboQuant: Online Vector Quantization with Near-optimal Distortion Rate (Zandieh et al., arXiv 2025)
+## [2026-04-16] ingest | World Models | Zero-shot World Models Are Developmentally Efficient Learners (Aw et al., arXiv 2026)
+## [2026-04-16] setup | Cognitive AI | Created new cognitive-ai topic bridging cognitive science and AI; focuses on data-gap challenge and human-like learning from limited data
+## [2026-04-16] ingest | Cognitive AI | The BabyView dataset: High-resolution egocentric videos of infants' and young children's everyday experiences (Long et al., arXiv 2025)
+## [2026-04-16] crosslink | Cognitive AI + World Models | Added BabyZWM to cognitive-ai topic; paper now appears in both topics to reflect its role bridging cognitive science and world models research
+
+## [2026-04-16] lint | various | Fixed 18 vision-language-models source reference mismatches, removed broken 2024-cu-tr-to-3d reference from 2d-to-3d-lifting concept
+
+## [2026-04-17] ingest | 3d-scene-understanding | B³-Seg (2026) — Bayesian active view selection for 3DGS segmentation; created concepts: 3d-gaussian-splatting, active-view-selection
+
+## [2026-04-17] ingest | 3d-scene-reconstruction | D4RT (2025) — unified 4D reconstruction via efficient point querying
+
+## [2026-04-17] ingest | video-understanding | Verifier (2026) — learned reliability scorer for multi-tracker pseudo-labeling
+
+## [2026-04-17] reorganize | point-tracking | created new topic for point-tracking; moved Verifier from video-understanding to point-tracking
+
+## [2026-04-22] ingest | Claim Relation Classification | ClaimFlow: Tracing the Evolution of Scientific Claims in NLP (Pramanick et al., arXiv 2026)
+
+## [2026-04-22] ingest | Claim Extraction | Towards Effective Extraction and Evaluation of Factual Claims (Metropolitansky & Larson, arXiv 2025)
+
+## [2026-04-22] ingest | 3D Scene Reconstruction | DAGE: Dual-Stream Architecture for Efficient and Fine-Grained Geometry Estimation (Ngo et al., arXiv 2026)

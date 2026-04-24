@@ -4,7 +4,7 @@ authors: Girdhar, Rohit; El-Nouby, Alaaeldin; Singh, Mannat; et al.
 year: 2023
 venue: CVPR
 topic: vision-language-models
-source: "[[raw/vision-language-models/2023/2023-imagebind-unified-embedding.pdf]]"
+source: "[[raw/vision-language-models/2023/2023-imagebind-one-embedding-space.pdf]]"
 tags: [unified-embeddings, cross-modal-alignment, zero-shot-transfer, emergent-capabilities]
 ---
 

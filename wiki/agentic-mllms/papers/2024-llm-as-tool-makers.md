@@ -5,11 +5,11 @@ year: 2024
 venue: ICLR
 topic: agentic-mllms
 source: "[[raw/agentic-mllms/2024/2024-llm-as-tool-makers.pdf]]"
-thumbnail: "[[wiki/agentic-mllms/papers/2024-llm-as-tool-makers.png]]"
+thumbnail: "[[raw/agentic-mllms/2024/thumbnails/2024-llm-as-tool-makers.png]]"
 tags: [llm-agents, tool-generation, code-generation, tool-reuse, cost-optimization]
 ---
 
-![](/wiki/agentic-mllms/papers/2024-llm-as-tool-makers.png)
+![](/raw/agentic-mllms/2024/thumbnails/2024-llm-as-tool-makers.png)
 
 ## Summary
 

@@ -4,7 +4,7 @@ authors: Stevens, Samuel; Wu, Jiaman; et al.
 year: 2024
 venue: CVPR
 topic: vision-language-models
-source: "[[raw/vision-language-models/2024/2024-bioclip-tree-of-life.pdf]]"
+source: "[[raw/vision-language-models/2024/2024-bioclip-vision-foundation-tree-of-life.pdf]]"
 tags: [fine-grained-classification, biology-domain, vision-foundation-model, hierarchical-representation]
 ---
 

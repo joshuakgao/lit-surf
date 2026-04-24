@@ -5,11 +5,11 @@ year: 2025
 venue: arXiv
 topic: denoising-segmentations
 source: "[[raw/denoising-segmentations/2025/2025-noisy-annotations-segmentation.pdf]]"
-thumbnail: "[[wiki/denoising-segmentations/papers/2025-noisy-annotations-segmentation.png]]"
+thumbnail: "[[raw/denoising-segmentations/2025/thumbnails/2025-noisy-annotations-segmentation.png]]"
 tags: [segmentation, annotation-noise, robustness, benchmarks]
 ---
 
-![](/wiki/denoising-segmentations/papers/2025-noisy-annotations-segmentation.png)
+![](/raw/denoising-segmentations/2025/thumbnails/2025-noisy-annotations-segmentation.png)
 
 ## Summary
 

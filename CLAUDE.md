@@ -11,6 +11,8 @@ reading-list/          # Drop unread papers/articles here (PDFs or MDs)
 raw/                   # Ingested source documents (immutable after filing)
   {topic-slug}/        # e.g., "diffusion-models", "mechanistic-interpretability"
     {year}/            # e.g., "2024"
+	  thumbnails/
+	    paper-thumbnail.png
       paper-name.pdf
       paper-name.md    # Optional markdown companion or clipped article
 wiki/                  # LLM-maintained literature review wikis
@@ -108,7 +110,7 @@ How this paper builds on, contradicts, or advances other work in this wiki.
 What the paper leaves unresolved or where the approach may not generalize.
 ```
 
-IMPORTANT: the `source` property must be formatted as `"[[raw/{topic}/{year}/filename.pdf]]"`, and the `thumbnail` property must be formatted as `"[[raw/{topic}/{year}/thumbnails/YYY-short-title.png]]"`.
+IMPORTANT: the `source` property must be formatted as `"[[raw/{topic}/{year}/filename.pdf]]"`, and the `thumbnail` property must be formatted as `"[[raw/{topic}/{year}/thumbnails/YYY-short-title.png]]"`. Do not 
 ### Concept page (`wiki/{topic}/concepts/concept-name.md`)
 
 ```markdown
@@ -235,6 +237,8 @@ When the user asks for a lint/health-check:
 5. Suggest papers that would fill obvious gaps, based on citations in existing summaries
 6. Report findings as a checklist the user can act on
 7. Create/remove/reorganize topics and the papers in those topics for better paper organization
+8. Make sure thumbnails are stored in raw/
+9. Check broken links and image links every, but especially in indexes and paper property source and thumbnail links
 
 ---
 

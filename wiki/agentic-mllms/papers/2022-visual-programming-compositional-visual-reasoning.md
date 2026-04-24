@@ -5,11 +5,11 @@ year: 2022
 venue: arXiv
 topic: agentic-mllms
 source: "[[raw/agentic-mllms/2022/2022-visual-programming-compositional-visual-reasoning.pdf]]"
-thumbnail: "[[wiki/agentic-mllms/papers/2022-visual-programming-compositional-visual-reasoning.png]]"
+thumbnail: "[[raw/agentic-mllms/2022/thumbnails/2022-visual-programming-compositional-visual-reasoning.png]]"
 tags: [neuro-symbolic, visual-reasoning, program-generation, in-context-learning, compositional-reasoning]
 ---
 
-![](/wiki/agentic-mllms/papers/2022-visual-programming-compositional-visual-reasoning.png)
+![](/raw/agentic-mllms/2022/thumbnails/2022-visual-programming-compositional-visual-reasoning.png)
 
 ## Summary
 

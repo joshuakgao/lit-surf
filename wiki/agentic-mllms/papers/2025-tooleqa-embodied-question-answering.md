@@ -5,11 +5,11 @@ year: 2025
 venue: arXiv
 topic: agentic-mllms
 source: "[[raw/agentic-mllms/2025/2025-tooleqa-embodied-question-answering.pdf]]"
-thumbnail: "[[wiki/agentic-mllms/papers/2025-tooleqa-embodied-question-answering.png]]"
+thumbnail: "[[raw/agentic-mllms/2025/thumbnails/2025-tooleqa-embodied-question-answering.png]]"
 tags: [embodied-qa, multi-step-reasoning, tool-use, vision-language-models, navigation]
 ---
 
-![](/wiki/agentic-mllms/papers/2025-tooleqa-embodied-question-answering.png)
+![](/raw/agentic-mllms/2025/thumbnails/2025-tooleqa-embodied-question-answering.png)
 
 ## Summary
 

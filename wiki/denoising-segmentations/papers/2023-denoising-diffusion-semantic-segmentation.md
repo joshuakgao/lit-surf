@@ -5,11 +5,11 @@ year: 2023
 venue: arXiv
 topic: denoising-segmentations
 source: "[[raw/denoising-segmentations/2023/2023-denoising-diffusion-semantic-segmentation.pdf]]"
-thumbnail: "[[wiki/denoising-segmentations/papers/2023-denoising-diffusion-semantic-segmentation.png]]"
+thumbnail: "[[raw/denoising-segmentations/2023/thumbnails/2023-denoising-diffusion-semantic-segmentation.png]]"
 tags: [segmentation, diffusion-models, mask-priors, generative]
 ---
 
-![](/wiki/denoising-segmentations/papers/2023-denoising-diffusion-semantic-segmentation.png)
+![](/raw/denoising-segmentations/2023/thumbnails/2023-denoising-diffusion-semantic-segmentation.png)
 
 ## Summary
 

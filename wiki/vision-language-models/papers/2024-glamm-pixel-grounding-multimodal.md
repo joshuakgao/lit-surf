@@ -4,7 +4,7 @@ authors: Rasheed, Hanoona; Maaz, Muhammad; Khan, Salman; Zamir, Amir; Shao, Long
 year: 2024
 venue: CVPR
 topic: vision-language-models
-source: "[[raw/vision-language-models/2024/2024-glamm-pixel-grounding.pdf]]"
+source: "[[raw/vision-language-models/2024/2024-glamm-pixel-grounding-multimodal.pdf]]"
 tags: [pixel-grounding, semantic-segmentation, conversational-grounding, dense-annotation]
 ---
 

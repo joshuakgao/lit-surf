@@ -4,7 +4,7 @@ authors: Han, Zongbo; et al.
 year: 2024
 venue: arXiv
 topic: vision-language-models
-source: "[[raw/vision-language-models/2025/2024-skip-newline-hallucination-reduction.pdf]]"
+source: "[[raw/vision-language-models/2025/2025-skip-newline-reduce-hallucination.pdf]]"
 tags: [hallucination-mitigation, prompt-engineering, semantic-bias, vision-language-understanding]
 ---
 

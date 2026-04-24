@@ -5,11 +5,11 @@ year: 2026
 venue: arXiv
 topic: depth-estimation
 source: "[[raw/depth-estimation/2026/2026-fe2e-from-editor-to-dense-geometry-estimator.pdf]]"
-thumbnail: "[[wiki/depth-estimation/papers/2026-fe2e-from-editor-to-dense-geometry-estimator.png]]"
+thumbnail: "[[raw/depth-estimation/2026/thumbnails/2026-fe2e-from-editor-to-dense-geometry-estimator.png]]"
 tags: [depth-estimation, normal-estimation, foundation-models, diffusion-transformers, zero-shot]
 ---
 
-![](/wiki/depth-estimation/papers/2026-fe2e-from-editor-to-dense-geometry-estimator.png)
+![](/raw/depth-estimation/2026/thumbnails/2026-fe2e-from-editor-to-dense-geometry-estimator.png)
 
 ## Summary
 

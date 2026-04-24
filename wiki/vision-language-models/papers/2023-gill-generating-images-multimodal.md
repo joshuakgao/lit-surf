@@ -4,7 +4,7 @@ authors: Koh, Jing Yu; Fried, Daniel; Saleh, Yasumasa
 year: 2023
 venue: NeurIPS
 topic: vision-language-models
-source: "[[raw/vision-language-models/2023/2023-generating-images-multimodal-language-models.pdf]]"
+source: "[[raw/vision-language-models/2023/2023-gill-generating-images-multimodal.pdf]]"
 tags: [image-generation, multimodal-dialogue, retrieval, language-vision-grounding]
 ---
 

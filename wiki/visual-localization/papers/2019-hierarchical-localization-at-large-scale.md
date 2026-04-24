@@ -5,11 +5,11 @@ year: 2019
 venue: arXiv
 topic: visual-localization
 source: "[[raw/visual-localization/2019/2019-hierarchical-localization-at-large-scale.pdf]]"
-thumbnail: "[[wiki/visual-localization/papers/2019-hierarchical-localization-at-large-scale.png]]"
+thumbnail: "[[raw/visual-localization/2019/thumbnails/2019-hierarchical-localization-at-large-scale.png]]"
 tags: [visual-localization, pose-estimation, hierarchical-matching, learned-features, mobile-robotics]
 ---
 
-![](/wiki/visual-localization/papers/2019-hierarchical-localization-at-large-scale.png)
+![](/raw/visual-localization/2019/thumbnails/2019-hierarchical-localization-at-large-scale.png)
 
 ## Summary
 

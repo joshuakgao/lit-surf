@@ -6,11 +6,11 @@ Visual localization is the task of determining the 6-DoF pose of a camera within
 
 ### 2025
 - [[papers/2025-megaloc-one-retrieval-to-place-them-all|MegaLoc: One Retrieval to Place Them All]] — Unified image retrieval model achieving SOTA across VPR, Landmark Retrieval, and Visual Localization through multi-task training on five diverse datasets
-<img src="/wiki/visual-localization/papers/2025-megaloc-one-retrieval-to-place-them-all.png" height="300"/>
+<img src="/raw/visual-localization/2025/thumbnails/2025-megaloc-one-retrieval-to-place-them-all.png" height="300"/>
 
 ### 2019
 - [[papers/2019-hierarchical-localization-at-large-scale|From Coarse to Fine: Robust Hierarchical Localization at Large Scale]] — HF-Net: hierarchical localization using learned global and local features, achieving state-of-the-art robustness with mobile-ready efficiency
-<img src="/wiki/visual-localization/papers/2019-hierarchical-localization-at-large-scale.png" height="300"/>
+<img src="/raw/visual-localization/2019/thumbnails/2019-hierarchical-localization-at-large-scale.png" height="300"/>
 
 ## Concepts
 - [[concepts/visual-localization|Visual Localization]] — Determining 6-DoF camera pose within a known 3D scene

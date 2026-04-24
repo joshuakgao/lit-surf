@@ -15,7 +15,6 @@ Research on models that jointly understand and generate language grounded in vis
 - [[papers/2025-llamav-o1-step-by-step-reasoning|LlamaV-o1: Rethinking Step-by-step Visual Reasoning in LLMs]] — VLM with explicit step-by-step reasoning for complex visual understanding tasks
 - [[papers/2025-internvl-large-vision-language-model|InternVL: A Scalable Vision-Language Model]] — large-scale VLM with strong performance across diverse vision-language benchmarks
 - [[papers/2025-mmlongbench|MMLongBench: Benchmarking Long-Context Vision-Language Models Effectively and Thoroughly]] — comprehensive benchmark for evaluating long-context VLMs across 7 dimensions and 12 tasks; exposes significant gaps in handling extended visual-textual inputs
-- [[papers/2025-spatiallm-llm-structured-indoor-modeling|SpatialLM]] — *(duplicate; see [[../../3d-scene-understanding/papers/2025-spatiallm-structured-indoor-modeling|full entry in 3D Scene Understanding]])*
 
 ### 2024
 - [[papers/2024-intro-vision-language-modeling|An Introduction to Vision-Language Modeling]] — comprehensive introduction to VLM architectures, training paradigms, and applications

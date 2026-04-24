@@ -4,7 +4,7 @@ authors: Bordes, Florian; Pang, Richard Yuanzhe; Ajay, Anurag; Li, Alexander C.;
 year: 2024
 venue: arXiv
 topic: vision-language-models
-source: "[[raw/vision-language-models/2024/2024-introduction-vision-language-modeling.pdf]]"
+source: "[[raw/vision-language-models/2024/2024-intro-vision-language-modeling.pdf]]"
 tags: [educational, architecture-survey, training-methodology, vision-language-foundations]
 ---
 

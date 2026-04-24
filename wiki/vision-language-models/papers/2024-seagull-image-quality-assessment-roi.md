@@ -4,7 +4,7 @@ authors: Chen, Chen; et al.
 year: 2024
 venue: arXiv
 topic: vision-language-models
-source: "[[raw/vision-language-models/2024/2024-seagull-roi-quality-assessment.pdf]]"
+source: "[[raw/vision-language-models/2024/2024-seagull-image-quality-assessment-roi.pdf]]"
 tags: [image-quality-assessment, region-of-interest, vision-language-instruction, fine-grained-evaluation]
 ---
 

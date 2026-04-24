@@ -20,4 +20,5 @@ Early approaches relied on supervised learning on specific datasets (NYU Depth, 
 
 ## Papers using this concept
 
+- [[2024-depth-anything]] — Foundation model via self-training on 62M unlabeled images; strong zero-shot generalization
 - [[2026-fe2e-from-editor-to-dense-geometry-estimator]] — Achieves exceptional zero-shot monocular depth via editing model foundation, outperforming 100× larger supervised baselines

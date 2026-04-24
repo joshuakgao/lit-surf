@@ -2,60 +2,66 @@
 title: "Boxer: Robust Lifting of Open-World 2D Bounding Boxes to 3D"
 authors: DeTone, Shen, Zhang, Ma, Straub, Newcombe, Engel
 year: 2026
-venue: Meta Reality Labs Research
+venue: arXiv
 topic: 3d-scene-understanding
-source: "[[raw/3d-scene-understanding/2026/2026-boxer-lifting-2d-to-3d.md]]"
+source: "[[raw/3d-scene-understanding/2026/2026-boxer-lifting-2d-to-3d.pdf]]"
 thumbnail: "[[raw/3d-scene-understanding/2026/thumbnails/2026-boxer-lifting-2d-to-3d.png]]"
-tags: [3d-detection, open-vocabulary, object-detection]
+tags: [3d-detection, open-world, 2d-lifting, multi-view-fusion]
 ---
 
 ![](/raw/3d-scene-understanding/2026/thumbnails/2026-boxer-lifting-2d-to-3d.png)
 
 ## Summary
 
-Boxer addresses open-world 3D object detection in indoor scenes by lifting 2D bounding box detections to 3D oriented bounding boxes (OBBs). The approach combines an open-vocabulary 2D detector (OWLv2) with BoxerNet, a learned module that leverages camera intrinsics, gravity direction, and optional depth to infer full 3D geometry from image crops. Detections across multiple frames are fused via Hungarian matching or online tracking to produce globally consistent scene-level 3D detections. The system is evaluated on multiple data sources (Aria, ScanNet, SUN-RGBD, CA-1M) and demonstrates practical deployment capabilities without requiring 3D annotations during training.
+Boxer addresses the open-world 3D object detection problem by decomposing it into two stages: leveraging powerful open-vocabulary 2D detectors (DETIC, OWLv2, SAM3) to localize objects in 2D, then lifting those detections into metric 3D space. The core contribution is BoxerNet, a transformer-based network that predicts metric 3D bounding boxes from 2D proposals paired with optional depth information (sparse point clouds or dense depth maps). The algorithm fuses multi-view detections across video sequences with geometric filtering to produce globally consistent, de-duplicated 3D bounding boxes in metric world space.
+
+The key insight is that this decoupling enables the model to focus on the geometric lifting problem rather than 2D detection, reducing demand for expensive 3DBB annotations while inheriting the semantic coverage and broad category support of web-scale 2D models. Boxer is trained on over 1.2 million unique 3D bounding boxes across multiple device types (pinhole and fisheye cameras) with varying depth modalities, making it robust to different input configurations.
 
 ## Key contributions
 
-- **Open-world 2D-to-3D lifting**: Uses OWLv2 to find arbitrary objects from text/visual prompts, then lifts to 3D without category-specific training
-- **BoxerNet design**: DINOv3 image encoding + cross-attention over camera and depth features predicts full 3D OBB parameters per detection
-- **Multi-view temporal fusion**: Hungarian-algorithm-based offline fusion and online tracking for scene-level consistency across frames
-- **Multi-source compatibility**: Single pipeline works with diverse inputs (fisheye cameras, RGB-D sequences, monocular video with SLAM)
+- Two-stage decomposition: leverage mature open-world 2D detectors + dedicated 3D lifting model
+- BoxerNet: transformer architecture extending CuTR with aleatoric uncertainty head and median depth patch encoding for flexible depth inputs
+- Multi-view temporal fusion: robust de-duplication and global consistency across video sequences
+- Large-scale training: 1.2M+ unique 3DBBs across multiple camera models and depth modalities
+- Strong empirical results: 0.532 mAP on egocentric data without depth (vs. 0.010 CuTR), 0.412 mAP on CA-1M with depth (vs. 0.250 CuTR)
 
 ## Method
 
-**2D Detection**: OWLv2 open-vocabulary detector finds objects in each frame using text prompts or manual 2D bounding box annotations. Supports custom label taxonomies.
+**Input:** Posed, calibrated video frames with camera intrinsics/extrinsics, optional sparse point clouds or dense depth maps, and per-frame 2D detections from open-world detectors.
 
-**3D Lifting**: BoxerNet operates per-detection. Given a 2D crop:
-- Encode image with DINOv3
-- Cross-attend with camera intrinsics (focal length, principal point) and optional semi-dense depth
-- Predict 3D OBB parameters: center (x, y, z), dimensions (w, h, d), orientation quaternion
+**BoxerNet architecture:** Transformer-based model that:
+1. Encodes 2D bounding box proposals (coordinates, size, confidence) alongside image features
+2. Optionally encodes depth as median-pooled patches (supports both sparse and dense inputs)
+3. Regresses 3D box center, dimensions, and rotation in metric world space
+4. Predicts aleatoric uncertainty for robust regression via learned variance per prediction
 
-**Fusion & Tracking**:
-- **Offline**: Hungarian matching across frames to merge duplicate detections
-- **Online**: Frame-by-frame tracking for real-time applications
-- Both modes output globally consistent per-scene 3D bounding boxes
+**Post-processing:** Multi-view temporal fusion operates on detected 3D boxes across the video sequence:
+1. Geometric filtering uses camera projection to identify consistent detections across views
+2. Median voting across frames and cameras produces final globally consistent 3DBBs
+3. De-duplication removes redundant detections of the same object
+
+The architecture is agnostic to camera model (pinhole, fisheye) and depth modality through flexible conditioning, enabling training on heterogeneous datasets.
 
 ## Results
 
-Evaluated on multiple benchmarks and datasets:
-- **CA-1M**: Indoor dataset with RGB-D sequences; Boxer achieves competitive 3D AP scores
-- **SUN-RGBD**: Single-image indoor scenes; demonstrates zero-shot generalization
-- **ScanNet**: Dense indoor reconstructions; strong performance on room-scale detection
-- **Project Aria**: Demonstrates practical deployment on egocentric video with fisheye optics
-
-Interactive demo shows real-time 2D-to-3D lifting on arbitrary video sequences.
+- **Egocentric settings (without depth):** 0.532 mAP vs. 0.010 mAP for CuTR baseline
+- **CA-1M benchmark (with depth):** 0.412 mAP vs. 0.250 mAP for CuTR baseline
+- Strong open-world category coverage: evaluated on spice jar, hairdryer, sink drain, TV remote, and many other long-tail objects
+- Robust to camera type variation: trained across multiple device types with different intrinsics and distortion models
+- Flexible depth handling: maintains performance whether sparse point clouds or dense depth maps are available
 
 ## Relation to prior work
 
-Boxer complements [[2025-spatiallm-structured-indoor-modeling|SpatialLM]] by solving the **object detection** leg of 3D scene understanding, while SpatialLM addresses holistic **scene layout and description**. Unlike SpatialLM's LLM-based structured generation, Boxer pursues task-specific neural architecture for precise bounding box geometry. Together, they represent two complementary paradigms: learned geometric lifting vs. language-based scene parsing.
+Boxer builds on CuTR [[2024-cu-tr-to-3d]] which first tackled 2D-to-3D lifting but focused on egocentric video with constraints on depth input. Boxer extends CuTR by: (1) supporting variable depth modalities via median patch encoding, (2) adding aleatoric uncertainty for robust regression, (3) scaling training 6x larger with 1.2M annotations.
 
-Builds on OWLv2 (Minderer et al. 2023) for open-vocabulary detection and DINOv2/DINOv3 for robust feature encoding, but novel application to camera-aware 3D geometry prediction with cross-attention fusion.
+Differs from related open-world 3D detection approaches (3D-MOOD, DetAny3D, OVMono3D) which operate monocularly and cannot effectively leverage depth when available. SAM3D provides richer output (full shape + texture) but lacks depth conditioning and multi-view fusion.
+
+Complements EgoLifter and ConceptGraphs which lift 2D segmentation masks to 3D; Boxer focuses on efficient bounding box detection with explicit temporal consistency.
 
 ## Open questions / limitations
 
-- **Category-agnostic geometry**: BoxerNet doesn't condition on object identity during lifting — unclear if category-specific geometry priors (e.g., chairs vs. tables) could improve accuracy
-- **Depth availability**: Performance likely degrades when depth is unavailable; robustness on monocular sequences with only SLAM-derived geometry not extensively evaluated
-- **Outdoor scenes**: System is tuned for indoor environments; outdoor object detection and orientation remains unexplored
-- **Occlusion handling**: Multi-view fusion helps but per-frame occlusion reasoning not explicitly addressed
-- **Scale of scenes**: Tested on room-scale; whole-building or outdoor large-scale scenes not demonstrated
+- **Monocular performance:** While egocentric results are strong, absolute monocular 3D localization (without depth or multi-view) remains inherently ambiguous and relies on dataset priors
+- **Depth sensor availability:** Performance ceiling likely bounded by quality of available depth; sparse SLAM/SfM point clouds provide less signal than dense RGB-D
+- **Dynamic objects:** Algorithm estimates static 3D boxes; handling articulated or moving objects requires additional reasoning
+- **Small/occluded objects:** Multi-view fusion helps but geometric ambiguity remains for objects visible in only one or two frames
+- **Real-time performance:** Not discussed; inference cost for BoxerNet + fusion pipeline unclear for deployment scenarios

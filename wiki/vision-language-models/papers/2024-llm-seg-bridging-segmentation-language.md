@@ -4,7 +4,7 @@ authors: Wang, Junchi; Ke, Lei; et al.
 year: 2024
 venue: CVPR Workshop
 topic: vision-language-models
-source: "[[raw/vision-language-models/2024/2024-llm-seg-bridging-segmentation.pdf]]"
+source: "[[raw/vision-language-models/2024/2024-llm-seg-bridging-segmentation-language.pdf]]"
 tags: [reasoning-segmentation, sam-integration, mask-proposal-selection, dataset-generation]
 ---
 

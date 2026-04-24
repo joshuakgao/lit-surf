@@ -4,7 +4,7 @@ authors: Árbol, Baldomero R.; Casas, Dan
 year: 2024
 venue: ECCV Workshop
 topic: vision-language-models
-source: "[[raw/vision-language-models/2024/2024-bodyshapegpt-smpl-manipulation.pdf]]"
+source: "[[raw/vision-language-models/2024/2024-bodyshapegpt-3d-body-shape-manipulation.pdf]]"
 tags: [3d-human-bodies, natural-language-control, avatar-generation, shape-parameters]
 ---
 

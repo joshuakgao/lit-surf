@@ -5,12 +5,11 @@ year: 2025
 venue: arXiv
 topic: visual-localization
 source: "[[raw/visual-localization/2025/2025-megaloc-one-retrieval-to-place-them-all.pdf]]"
-thumbnail: "[[wiki/visual-localization/papers/2025-megaloc-one-retrieval-to-place-them-all.png]]"
-thumbnail: "[[wiki/visual-localization/papers/2025-megaloc-one-retrieval-to-place-them-all.png]]"
+thumbnail: "[[raw/visual-localization/2025/thumbnails/2025-megaloc-one-retrieval-to-place-them-all.png]]"
 tags: [visual-localization, image-retrieval, place-recognition, landmark-retrieval, multi-task-learning]
 ---
 
-![](/wiki/visual-localization/papers/2025-megaloc-one-retrieval-to-place-them-all.png)
+![](/raw/visual-localization/2025/thumbnails/2025-megaloc-one-retrieval-to-place-them-all.png)
 
 ## Summary
 

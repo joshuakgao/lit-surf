@@ -5,11 +5,11 @@ year: 2017
 venue: arXiv
 topic: synthetic-datasets
 source: "[[raw/synthetic-datasets/2017/2017-playing-for-benchmarks-gta-dataset.pdf]]"
-thumbnail: "[[wiki/synthetic-datasets/papers/2017-playing-for-benchmarks-gta-dataset.png]]"
+thumbnail: "[[raw/synthetic-datasets/2017/thumbnails/2017-playing-for-benchmarks-gta-dataset.png]]"
 tags: [synthetic-dataset, video-benchmark, multi-task-learning, game-engine, urban-perception]
 ---
 
-![](/wiki/synthetic-datasets/papers/2017-playing-for-benchmarks-gta-dataset.png)
+![](/raw/synthetic-datasets/2017/thumbnails/2017-playing-for-benchmarks-gta-dataset.png)
 
 ## Summary
 

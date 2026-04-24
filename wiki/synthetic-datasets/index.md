@@ -6,11 +6,11 @@ Synthetic datasets provide an economical and scalable alternative to real-world 
 
 ### 2021
 - [[papers/2021-hypersim-photorealistic-synthetic-dataset-indoor-scene|Hypersim: A Photorealistic Synthetic Dataset for Holistic Indoor Scene Understanding]] — Large-scale dataset with 77,400 images from 461 scenes, public 3D assets, disentangled image factorization, and strong sim-to-real transfer
-<img src="/wiki/synthetic-datasets/papers/2021-hypersim-photorealistic-synthetic-dataset-indoor-scene.png" height="300"/>
+<img src="/raw/synthetic-datasets/2021/thumbnails/2021-hypersim-photorealistic-synthetic-dataset-indoor-scene.png" height="300"/>
 
 ### 2017
 - [[papers/2017-playing-for-benchmarks-gta-dataset|Playing for Benchmarks]] — Multi-task benchmark from GTA V with 254,064 annotated frames covering semantic/instance segmentation, 3D layout, visual odometry, optical flow, tracking in diverse conditions
-<img src="/wiki/synthetic-datasets/papers/2017-playing-for-benchmarks-gta-dataset.png" height="300"/>
+<img src="/raw/synthetic-datasets/2017/thumbnails/2017-playing-for-benchmarks-gta-dataset.png" height="300"/>
 
 ## Concepts
 - [[concepts/synthetic-datasets|Synthetic Datasets]] — Computer-generated images with automatically-produced ground truth annotations

@@ -4,7 +4,7 @@ authors: [Details in paper]
 year: 2024
 venue: CVPR
 topic: vision-language-models
-source: "[[raw/vision-language-models/2025/2024-internvl-scaled-vision-foundation.pdf]]"
+source: "[[raw/vision-language-models/2025/2025-internvl-large-vision-language-model.pdf]]"
 tags: [scaled-vision-foundation, progressive-alignment, multi-stage-training, unified-benchmarks]
 ---
 

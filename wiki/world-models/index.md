@@ -9,6 +9,9 @@ Research on learning and representing models of visual environments—the dynami
 ## Papers by year
 
 ### 2026
+- [[papers/2026-babyzwm-zero-shot-world-models|Zero-shot World Models Are Developmentally Efficient Learners]] — learns visual-cognitive abilities (depth, motion, segmentation, intuitive physics) from 868 hours of egocentric child video; zero-shot transfer via approximate causal inference; developmental trajectory and brain-aligned representations
+<img src="../../raw/world-models/2026/thumbnails/2026-babyzwm-zero-shot-world-models.png" height="300"/>
+
 - [[papers/2026-vbvr-very-big-video-reasoning|VBVR: A Very Big Video Reasoning Suite]] — 2.015M-sample dataset across 200 tasks spanning five cognitive capabilities (Spatiality, Transformation, Knowledge, Abstraction, Perception); verifiable eval framework; first large-scale scaling study showing emergent generalization
 <img src="../../raw/world-models/2026/thumbnails/2026-vbvr-very-big-video-reasoning.png" height="300"/>
 
@@ -24,6 +27,9 @@ Research on learning and representing models of visual environments—the dynami
 - [[concepts/predictive-coding|Predictive Coding]] — neuroscience-grounded hypothesis that learning is driven by minimizing prediction error; brain maintains internal models that predict sensory input and update on mismatches
 - [[concepts/intuitive-physics|Intuitive Physics]] — commonsense understanding of physical laws (object permanence, solidity, continuity, contact); foundational cognitive capability across humans and animals
 - [[concepts/verifiable-evaluation|Verifiable Evaluation]] — rule-based, human-aligned scoring for reproducible and interpretable diagnosis of reasoning capabilities; alternative to VLM-as-judge paradigms
+- [[concepts/temporally-factored-prediction|Temporally-Factored Prediction]] — decouples appearance from dynamics in visual prediction; sparse masking encourages natural factorization without explicit supervision
+- [[concepts/approximate-causal-inference|Approximate Causal Inference]] — extracts task-specific visual structures from trained models by comparing predictions under ground-truth vs. counterfactual inputs; enables zero-shot readouts
+- [[concepts/developmental-learning-trajectory|Developmental Learning Trajectory]] — evaluates how model capabilities emerge over training using infant development milestones as reference; provides developmental plausibility validation
 
 ## See also
 

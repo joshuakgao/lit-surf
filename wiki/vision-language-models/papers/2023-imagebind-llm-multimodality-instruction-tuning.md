@@ -4,7 +4,7 @@ authors: Han, Zhe; Zhang, Ziyi; Zhang, Shuhao; et al.
 year: 2023
 venue: NeurIPS
 topic: vision-language-models
-source: "[[raw/vision-language-models/2023/2023-imagebind-llm-multimodality-instruction.pdf]]"
+source: "[[raw/vision-language-models/2023/2023-imagebind-llm-multimodality-instruction-tuning.pdf]]"
 tags: [multimodal-instruction-tuning, embedding-space-alignment, cross-modal-cache, zero-shot]
 ---
 

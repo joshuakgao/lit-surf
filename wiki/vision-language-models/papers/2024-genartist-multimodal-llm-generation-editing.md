@@ -4,7 +4,7 @@ authors: Wang, Zhenyu; et al.
 year: 2024
 venue: NeurIPS (Spotlight)
 topic: vision-language-models
-source: "[[raw/vision-language-models/2024/2024-genartist-image-generation-agent.pdf]]"
+source: "[[raw/vision-language-models/2024/2024-genartist-multimodal-llm-generation-editing.pdf]]"
 tags: [image-generation, image-editing, agent-reasoning, self-correction, tool-use]
 ---
 

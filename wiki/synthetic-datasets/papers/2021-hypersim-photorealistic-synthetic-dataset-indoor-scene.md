@@ -5,11 +5,11 @@ year: 2021
 venue: arXiv
 topic: synthetic-datasets
 source: "[[raw/synthetic-datasets/2021/2021-hypersim-photorealistic-synthetic-dataset-indoor-scene.pdf]]"
-thumbnail: "[[wiki/synthetic-datasets/papers/2021-hypersim-photorealistic-synthetic-dataset-indoor-scene.png]]"
+thumbnail: "[[raw/synthetic-datasets/2021/thumbnails/2021-hypersim-photorealistic-synthetic-dataset-indoor-scene.png]]"
 tags: [synthetic-dataset, scene-understanding, photorealistic, sim-to-real, multi-task-learning]
 ---
 
-![](/wiki/synthetic-datasets/papers/2021-hypersim-photorealistic-synthetic-dataset-indoor-scene.png)
+![](/raw/synthetic-datasets/2021/thumbnails/2021-hypersim-photorealistic-synthetic-dataset-indoor-scene.png)
 
 ## Summary
 

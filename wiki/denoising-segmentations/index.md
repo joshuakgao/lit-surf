@@ -6,11 +6,11 @@ Annotation noise—including class label errors, boundary distortions, and weak 
 
 ### 2025
 - [[papers/2025-noisy-annotations-segmentation|Noisy Annotations in Semantic Segmentation]] — Systematically characterizes annotation noise patterns and introduces COCO-N, CityScapes-N, VIPER-N benchmarks for robustness evaluation
-<img src="/wiki/denoising-segmentations/papers/2025-noisy-annotations-segmentation.png" height="300"/>
+<img src="/raw/denoising-segmentations/2025/thumbnails/2025-noisy-annotations-segmentation.png" height="300"/>
 
 ### 2023
 - [[papers/2023-denoising-diffusion-semantic-segmentation|Denoising Diffusion Semantic Segmentation with Mask Prior Modeling]] — Uses discrete diffusion to learn mask priors and refine segmentation predictions, achieving +3 mIoU improvements on ADE20K
-<img src="/wiki/denoising-segmentations/papers/2023-denoising-diffusion-semantic-segmentation.png" height="300"/>
+<img src="/raw/denoising-segmentations/2023/thumbnails/2023-denoising-diffusion-semantic-segmentation.png" height="300"/>
 
 ## Concepts
 - [[concepts/label-noise|Label Noise]] — Incorrect or inaccurate annotations in training data

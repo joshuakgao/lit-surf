@@ -4,7 +4,7 @@ authors: Wu, Shengqian; Jiang, Bing; Mao, Xiaodong; et al.
 year: 2023
 venue: ICML
 topic: vision-language-models
-source: "[[raw/vision-language-models/2023/2023-next-gpt-any-to-any-multimodal.pdf]]"
+source: "[[raw/vision-language-models/2023/2023-nextgpt-any-to-any-multimodal.pdf]]"
 tags: [any-to-any-multimodal, diffusion-generation, audio-video, modality-switching]
 ---
 
